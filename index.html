@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced AI App - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced AI Capabilities</h1>
+            <p>Explore the future of AI with our multi-modal and specialized functions.</p>
+        </header>
+
+        <main>
+            <section id="file-analysis" class="feature-section">
+                <h2>File Upload & Analysis</h2>
+                <p>Upload images, documents, or PDFs for AI processing.</p>
+                <div class="upload-area">
+                    <p>Drag & Drop Files Here or Click to Upload</p>
+                    <input type="file" id="file-upload-input" accept="image/*, .pdf, .txt, .json, .xml">
+                    <label for="file-upload-input" class="button">Browse Files</label>
+                    <p id="selected-file-name" class="file-info"></p>
+                </div>
+                <div class="analysis-results">
+                    <h3>File Content Preview:</h3>
+                    <div id="file-preview" class="preview-area"></div>
+                    <h3>AI Analysis Result:</h3>
+                    <p id="analysis-output" class="ai-output"></p>
+                </div>
+            </section>
+
+            <section id="multi-modal" class="feature-section">
+                <h2>Multi-modal AI Capabilities</h2>
+                <p>Combine text, image, and voice for richer AI interactions.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Vision Analysis</h3>
+                        <p>Upload an image and get an AI-generated description.</p>
+                        <input type="file" id="image-upload-mm-input" accept="image/*">
+                        <label for="image-upload-mm-input" class="button">Upload Image</label>
+                        <p id="selected-image-mm-name" class="file-info"></p>
+                        <p id="image-description-mm-output" class="ai-output"></p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Voice Interaction</h3>
+                        <p>Speak to the AI and get a text response.</p>
+                        <button id="toggle-recording-btn" class="button">Start Recording</button>
+                        <p id="voice-transcript-output" class="ai-output"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="specialized-ai" class="feature-section">
+                <h2>Specialized AI Functions</h2>
+                <p>AI tailored for specific use cases (e.g., creative writing, document summarization).</p>
+                <div class="feature-card">
+                    <h3>Creative Story Generator</h3>
+                    <p>Input a prompt or upload an image, and AI will generate a short story.</p>
+                    <textarea id="story-prompt-input" rows="4" placeholder="Enter your prompt or describe an image..."></textarea>
+                    <button id="generate-story-btn" class="button">Generate Story</button>
+                    <p id="generated-story-output" class="ai-output"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Advanced AI App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
